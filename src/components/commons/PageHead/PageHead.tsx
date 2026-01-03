@@ -1,5 +1,8 @@
-import { PropTypes } from "@/utils/interface";
 import Head from "next/head";
+
+interface PropTypes {
+  title?: string;
+}
 
 const PageHead = (props: PropTypes) => {
   const { title = "Acara" } = props;
