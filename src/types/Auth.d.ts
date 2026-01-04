@@ -5,3 +5,7 @@ export interface RegisterUser {
   password: string;
   confirmPassword: string;
 }
+
+export interface ActivationCode {
+  code: string;
+}
