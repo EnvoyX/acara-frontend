@@ -9,7 +9,7 @@ export interface RegisterUser {
   confirmPassword: string;
 }
 
-export interface Login {
+export interface LoginUser {
   identifier: string;
   password: string;
 }

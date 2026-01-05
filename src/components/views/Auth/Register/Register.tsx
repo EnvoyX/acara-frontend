@@ -41,12 +41,12 @@ const Register: FC<RegisterProps> = ({ title }) => {
       <div>
         <Card>
           <CardBody className="p-8">
-            <h2 className="text-xl font-bold text-danger-500">
+            <h2 className="text-2xl font-bold text-danger-500">
               Create Account
             </h2>
-            <p className="mb-4 text-sm">
+            <p className="mb-4 mt-2 text-sm">
               Have an account?&nbsp;
-              <Link className="font-semibold text-danger-400" href="/login">
+              <Link className="font-semibold text-danger-400" href="login">
                 Login
               </Link>
             </p>
@@ -166,7 +166,12 @@ const Register: FC<RegisterProps> = ({ title }) => {
                   />
                 )}
               />
-              <Button color="danger" size="lg" type="submit">
+              <Button
+                color="danger"
+                size="lg"
+                type="submit"
+                disabled={isPendingRegister}
+              >
                 {isPendingRegister ? (
                   <Spinner color="white" size="sm" />
                 ) : (
