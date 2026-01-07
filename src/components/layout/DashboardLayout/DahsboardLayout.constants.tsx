@@ -9,6 +9,12 @@ import {
 
 export const SIDEBAR_ADMIN = [
   {
+    key: "dashboard",
+    label: "Dashboard",
+    href: "/admin",
+    icon: <CiGrid41 />,
+  },
+  {
     key: "event",
     label: "Event",
     href: "/admin/event",
